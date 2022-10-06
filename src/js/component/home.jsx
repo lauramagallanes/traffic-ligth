@@ -49,11 +49,11 @@ const TrafficLight = () => {
 	// aca retorno lo que quiero mostrar con sus cambios onClick
   return (
     
-    <div style={{width: "3em"}}>
+    <div className="container bg-dark " id="container-principal" style={{width: "4em", height: "9em"}}>
              
-          <div className="container bg-danger" onClick= {()=> prenderRed()} style={{boxShadow: encendidoRed}}>Rojo</div>
-          <div className="container bg-warning" onClick= {()=> prenderYellow()} style={{boxShadow: encendidoYellow}}>Naranja</div>
-          <div className="container bg-success" onClick= {()=> prenderGreen()} style={{boxShadow: encendidoGreen}}>Verde</div>
+          <div className="rounded-circle bg-danger mt-2 pt-1 mb-1" onClick= {()=> prenderRed()} style={{boxShadow: encendidoRed, height: "30%", width: "110%"}}></div>
+          <div className="rounded-circle bg-warning mb-1" onClick= {()=> prenderYellow()} style={{boxShadow: encendidoYellow, height: "30%", width: "110%"}}></div>
+          <div className="rounded-circle bg-success" onClick= {()=> prenderGreen()} style={{boxShadow: encendidoGreen, height: "30%", width: "110%"}}></div>
                
     </div>
   );
